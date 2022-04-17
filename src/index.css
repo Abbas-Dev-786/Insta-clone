@@ -1,13 +1,179 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #000;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.bi:hover {
+  cursor: pointer;
+}
+
+.bi-heart-fill {
+  color: #dd3445;
+}
+
+/* sign section styling */
+.sign-img {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  float: left;
+}
+
+.sign-label {
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  color: #9f9f9f !important;
+}
+
+.login-text {
+  font-weight: 400;
+  font-size: 17px;
+  color: #444444;
+}
+
+.login-text a {
+  color: #f8544c;
+  font-weight: 400;
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+.sign-label a {
+  color: #f8544c;
+}
+
+.sign-img h2 {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+.sign-img h2 span {
+  color: #f8544c;
+  font-weight: 700;
+}
+
+.download-img {
+  width: 180px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.sign-box {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px 5px rgb(4 4 4 / 34%);
+  border-radius: 10px;
+}
+
+.intro-line {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.69);
+  font-size: 18px;
+}
+/* sign section styling */
+
+@media (max-width: 991.98px) {
+  .resp-display {
+    display: none;
+  }
+
+  .login-card {
+    width: 100%;
+  }
+}
+
+.swiper-container {
+  width: 480px;
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
 }
